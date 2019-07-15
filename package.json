@@ -1,0 +1,42 @@
+{
+  "name": "restaurant-api",
+  "version": "1.0.0",
+  "description": "A example of a simple API",
+  "main": "dist",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src\"",
+    "build": "babel src --out-dir dist",
+    "prestart": "npm run -s build",
+    "start": "NODE_ENV=production pm2 start dist",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "author": "Francisco Arredondo <frarredo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "eslint": "^6.0.1",
+    "nodemon": "^1.19.1"
+  }
+}
