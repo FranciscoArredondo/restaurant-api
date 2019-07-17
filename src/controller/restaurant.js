@@ -7,7 +7,6 @@ export default ({ config, db }) => {
 
   // '/v1/restaurant/add'
   api.post('/add', (req, res) => {
-    console.log('trying to post...');
     let newRest = new Restaurant();
     newRest.name = req.body.name;
 
