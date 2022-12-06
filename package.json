@@ -27,8 +27,8 @@
   "author": "Francisco Arredondo <frarredo@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "mongoose": "^5.6.4"
   },
   "devDependencies": {
